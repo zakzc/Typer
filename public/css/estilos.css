@@ -1,0 +1,86 @@
+.typingField {
+  font-size: 20px;
+  height: 150px;
+  border: 3px solid black;
+}
+
+.phrase {
+  font-size: 20px;
+  text-align: left;
+}
+
+.typingOff {
+  background-color: lightgray;
+}
+
+.redBorder {
+  border: 3px solid darkred;
+}
+
+.greenBorder {
+  border: 3px solid darkgreen;
+}
+
+.score {
+  margin-top: 120px;
+}
+
+/* #keyboard {
+  float: left;
+} */
+
+.score {
+  display: none;
+}
+
+#words {
+  margin-left: 25px;
+}
+
+body {
+  overflow: scroll;
+}
+
+#requestError {
+  background-color: darkred;
+  color: darkgrey;
+  font-size: 2rem;
+  border: solid black 1px;
+  padding: 15px 10px;
+  display: none;
+}
+
+#spinWheel {
+  display: none;
+}
+
+#inputNewPhrase {
+  width: 45px;
+}
+
+.slider {
+  height: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.phrases {
+  margin-top: 200px;
+}
+
+#myUsers {
+  display: inline-block;
+}
+
+.selectUser {
+  margin-top: 35px;
+  width: 175px;
+  float: left;
+}
+
+.controlButtons {
+  margin-top: 35px;
+}

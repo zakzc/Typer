@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css" />
+    <link rel="stylesheet" href="css/libs/google-fonts.css" />
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- selectize -->
+    <link rel="stylesheet" href="css/libs/selectize.default.css" />
+    <!-- toolTipster -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/libs/tooltipster.bundle.min.css"
+    />
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="phraseIndicators">
+        <h1 class="center">Seja bem vindo ao Typer</h1>
+        <!-- <div class="slider">
+          <img src="img/slide1.png" alt="imagem-jogo1" />
+          <img src="img/slide2.png" alt="imagem-jogo2" />
+          <img src="img/slide3.png" alt="imagem-jogo3" />
+        </div> -->
+        <div class="phrases">
+          <p class="center">Texto a ser digitado:</p>
+          <p id="phraseToCopy">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+        </div>
+        <section class="informationToTheUser">
+          <div class="center">
+            <img id="spinWheel" src="img/spinner.gif" alt="spinning wheel" />
+            <p id="requestError">Ocorreu um erro, tente novamente</p>
+          </div>
+        </section>
+        <ul class="information center">
+          <li class="left">
+            <i class="medium material-icons"> query_builder </i
+            ><span id="typingTimeLeft">3</span> segundos para digitar essa frase
+          </li>
+          <li class="center">
+            <i class="medium material-icons"> format_quote </i> Esta phrase tem
+            <span id="sizeOfSentence"></span> palavras
+          </li>
+        </ul>
+      </section>
+      <textarea class="typingField" rows="28" cols="80"></textarea>
+      <section class="gameIndicators">
+        <ul>
+          <li class="left" id="keyboard">
+            <i class="medium material-icons">
+              keyboard
+            </i>
+            <span id="characterCounter">0</span> caracteres
+          </li>
+          <li class="center" id="words">
+            <i class="medium material-icons"> description </i
+            ><span id="wordCounter">0</span> palavras
+          </li>
+        </ul>
+      </section>
+      <section class="controlButtons">
+        <div class="right buttons">
+          <a
+            id="changeSentenceButton"
+            class="btn-floating btn-large waves-effect waves-light blue"
+            ><i class="material-icons">shuffle</i></a
+          >
+          <a
+            id="reStartGame"
+            class="btn-floating btn-large waves-effect waves-light red"
+            ><i class="material-icons">restore</i></a
+          >
+          <a
+            id="showScoreButton"
+            class="btn-floating btn-large waves-effect waves-light green"
+            ><i class="material-icons">assignment</i></a
+          >
+          <a
+            class="btn-floating btn-large waves-effect waves-light cyan"
+            id="chooseNewPhrase"
+            ><i class="material-icons">repeat_1</i></a
+          >
+          <input type="number" id="inputNewPhrase" min="0" />
+
+          <a
+            class="tooltip btn-floating btn-large waves-effect waves-light black"
+            id="syncronizeMe"
+            title="Sincronizado com sucesso"
+            ><i class="material-icons">sync</i></a
+          >
+        </div>
+      </section>
+      <div class="selectUser">
+        <h5>Quem está jogando?</h5>
+        <select id="myUsers"
+          ><option value="john">John</option>
+          <option value="paul">Paul</option
+          ><option value="George">George</option
+          ><option value="ringo">Ringo</option>
+        </select>
+      </div>
+      <section class="score">
+        <h3 class="center">Placar</h3>
+        <table class="center bordered">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>No. de palavras digitadas</th>
+              <th>Remover score?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- <td>Player 1</td>
+              <td>10</td>
+              <td>
+                <a
+                  class="removeScoreButton"
+                  id="reStartGame"
+                  class="btn-floating btn-medium waves-effect waves-light red"
+                  ><i class="material-icons">delete</i></a
+                >
+              </td> -->
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/score.js"></script>
+    <script type="text/javascript" src="js/startFinish.js"></script>
+    <script type="text/javascript" src="js/border.js"></script>
+    <script type="text/javascript" src="js/gamefunc.js"></script>
+    <script type="text/javascript" src="js/phrases.js"></script>
+    <!-- slick -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- selectize -->
+    <script type="text/javascript" src="selectize/selectize.min.js"></script>
+    <!-- tooltipster -->
+    <script type="text/javascript" src="tooltipster/tooltipster.bundle.min.js">
+      <!-- calls for libraries -->
+      <script type="text/javascript" src="js/slider.js">
+    </script>
+  </body>
+</html>
